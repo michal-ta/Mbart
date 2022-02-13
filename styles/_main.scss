@@ -1,0 +1,7 @@
+.flex-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-content: flex-start;
+    padding:em(15);
+}
