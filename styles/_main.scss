@@ -3,5 +3,33 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-content: flex-start;
-    padding:em(15);
+    padding:em(10);
+    
+}
+
+.galery,
+.aboutus,
+.contacts,
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: em(25);
+    margin: em(25);
+    border: 1px solid $color_darkshades;
+    width: 90%;
+
+    &:hover, &:active{
+        box-shadow:  em(2) em(4) em(8) $color_darkaccent;
+        cursor: pointer;
+    }
+
+    h2{
+        font-size: em(30);
+        padding-bottom: em(12);
+        color: $color_darkaccent;
+        letter-spacing: em(2);
+        line-height: em(12);
+        font-weight: 700;
+    }
 }

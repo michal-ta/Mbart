@@ -8,6 +8,9 @@
 body {
   height: 100vh;
   width: 100vw;
+  letter-spacing: 0.075em;
+  line-height: 1.25em;
+  background-color: #edeee8;
 }
 
 .grid {
@@ -15,6 +18,8 @@ body {
   display: grid;
   -ms-grid-rows: 1fr 3fr 1fr;
       grid-template-rows: 1fr 3fr 1fr;
+  width: 100vw;
+  height: 100vh;
 }
 
 .nav {
@@ -27,7 +32,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 16.25em;
+  height: 11.25em;
 }
 
 .brand {
@@ -52,6 +57,50 @@ body {
   justify-items: center;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  padding: 0.9375em;
+  padding: 0.625em;
+}
+
+.galery,
+.aboutus,
+.contacts,
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5625em;
+  margin: 1.5625em;
+  border: 1px solid #354049;
+  width: 90%;
+}
+
+.galery:hover, .galery:active,
+.aboutus:hover,
+.aboutus:active,
+.contacts:hover,
+.contacts:active,
+.social:hover,
+.social:active {
+  -webkit-box-shadow: 0.125em 0.25em 0.5em #7b6056;
+          box-shadow: 0.125em 0.25em 0.5em #7b6056;
+  cursor: pointer;
+}
+
+.galery h2,
+.aboutus h2,
+.contacts h2,
+.social h2 {
+  font-size: 1.875em;
+  padding-bottom: 0.75em;
+  color: #7b6056;
+  letter-spacing: 0.125em;
+  line-height: 0.75em;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
