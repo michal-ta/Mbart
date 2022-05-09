@@ -18,6 +18,7 @@
     margin: em(25);
     border: 1px solid $color_darkshades;
     width: 90%;
+    height: 100%;
 
     &:hover, &:active{
         box-shadow:  em(2) em(4) em(8) $color_darkaccent;
@@ -32,4 +33,10 @@
         line-height: em(12);
         font-weight: 700;
     }
+}
+
+.fab,
+.fas{
+    color:$color_main;
+    font-size: em(32);
 }

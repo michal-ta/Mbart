@@ -9,5 +9,13 @@ body{
     width: 100vw;
     letter-spacing: em(1.2);
     line-height: em(20);
-    background-color: $color_lightshades;
+    background-color: lighten($color_lightaccent,22%);
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
 }

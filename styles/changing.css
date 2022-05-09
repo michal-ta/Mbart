@@ -10,14 +10,22 @@ body {
   width: 100vw;
   letter-spacing: 0.075em;
   line-height: 1.25em;
-  background-color: #edeee8;
+  background-color: #eee1e2;
+  background-image: url(../img/background.svg);
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 3fr 1fr;
-      grid-template-rows: 1fr 3fr 1fr;
+  -ms-grid-rows: 1fr 3fr 0.5fr;
+      grid-template-rows: 1fr 3fr 0.5fr;
   width: 100vw;
   height: 100vh;
 }
@@ -33,6 +41,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 11.25em;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
 }
 
 .brand {
@@ -47,5 +61,36 @@ body {
 .logo {
   height: 100%;
   width: 100%;
+}
+
+.autorcon {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.25fr 1fr 0.25fr;
+      grid-template-columns: 0.25fr 1fr 0.25fr;
+  -ms-grid-row: 3;
+  grid-row: 3/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  align-self: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+  padding: 0.75em 0;
+  border-top: 0.0625em solid #4c251c;
+  background-color: #d7a7a6;
+}
+
+.autorcon .fab, .autorcon .fas {
+  font-size: 1.125em;
+  padding: 0 0.75em;
+  font-weight: 800;
+  color: #4c251c;
+}
+
+.autorcon .fab:hover, .autorcon .fab:active, .autorcon .fas:hover, .autorcon .fas:active {
+  color: #b55a58;
 }
 /*# sourceMappingURL=changing.css.map */
