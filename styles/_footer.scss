@@ -9,12 +9,14 @@
     padding: em(12) 0;
     border-top: em(1) solid $color_darkshades;
     background-color: lighten($color_darkaccent,22%);
+    font-size: em(12);
 
     .fab,.fas{
         font-size: em(18);
         padding: 0 em(12) ;
         font-weight: 800;
         color: $color_darkshades;
+        transition: color 0.25s linear;
 
         &:hover,&:active{
             color: $color_darkaccent;

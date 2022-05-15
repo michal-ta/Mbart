@@ -7,15 +7,24 @@
 body{
     height: 100vh;
     width: 100vw;
-    letter-spacing: em(1.2);
+    letter-spacing: em(2);
     line-height: em(20);
     background-color: lighten($color_lightaccent,22%);
-    background-image: url(../img/background.svg);
+    background-image: url(../img/backgroundver2.svg);
     background-repeat: no-repeat;
     background-blend-mode: overlay;
+    font-family: 'Lobster', cursive;
+    
 }
 
 a{
     text-decoration: none;
     color:inherit;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    width: 100vw;
+    height: 100vh;
 }

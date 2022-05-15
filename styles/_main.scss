@@ -7,6 +7,7 @@
     
 }
 
+//main content , rozdelenie do 4 stlcov 
 .galery,
 .aboutus,
 .contacts,
@@ -17,26 +18,90 @@
     padding: em(25);
     margin: em(25);
     border: 1px solid $color_darkshades;
+    border-radius: em(2.5);
     width: 90%;
     height: 100%;
+    transition: box-shadow 0.5s ease-in-out;
+    font-family: 'Lobster', cursive;
+
+    p{
+        padding: em(5) 0;
+    }
 
     &:hover, &:active{
-        box-shadow:  em(2) em(4) em(8) $color_darkaccent;
+        box-shadow:  em(1) em(1) em(22) $color_darkaccent;
         cursor: pointer;
     }
 
     h2{
         font-size: em(30);
         padding-bottom: em(12);
-        color: $color_darkaccent;
+        color: darken($color_main,22%);
         letter-spacing: em(2);
         line-height: em(12);
         font-weight: 700;
     }
 }
 
+.social{
+
+    .linky{
+        justify-self: flex-end;
+        padding: em(25) 0;
+
+        .fab{
+          margin: em(12) 0;
+          font-size: em(40); 
+          color: $color_darkshades; 
+
+    
+            &:hover,&:active{
+                color: $color_darkaccent;
+                cursor: pointer;
+                transition: color 0.25s linear;
+            }
+        }
+
+    }
+
+}
 .fab,
 .fas{
-    color:$color_main;
+    color:$color_darkaccent;
     font-size: em(32);
+}
+
+
+//kontakt formular 
+.post{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 0;
+
+}
+
+.form, .btn-send{
+    padding: em(2);
+    margin: em(5);
+    width: 100%;
+    outline: none;
+    border: em(0.8) solid darken($color_lightaccent,12%);
+    background-color:lighten($color_lightaccent,12%);
+    color: darken($color_main,32%);
+}
+
+textarea{
+    overflow: auto;
+}
+
+.btn-send{
+    color: darken($color_darkaccent,22%);
+    background-color: $color_main;
+    cursor: pointer;
+
+    &:hover, &:active{
+        box-shadow: em(2) em(3) em(25) $color_darkaccent;
+        transform: translateY(em(.8))
+    }
 }
