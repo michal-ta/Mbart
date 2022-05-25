@@ -21,8 +21,8 @@
     border-radius: em(2.5);
     width: 90%;
     height: 100%;
-    transition: box-shadow 0.5s ease-in-out;
     font-family: 'Lobster', cursive;
+    
 
     p{
         padding: em(5) 0;
@@ -31,6 +31,8 @@
     &:hover, &:active{
         box-shadow:  em(1) em(1) em(22) $color_darkaccent;
         cursor: pointer;
+        transition: all 0.2s linear;
+        transform: scale(1.02);
     }
 
     h2{

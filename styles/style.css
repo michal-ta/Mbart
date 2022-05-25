@@ -77,17 +77,18 @@ a {
   padding: 0.25em;
   border-radius: 0.125em;
   border: 0.01562em solid #995659;
+  cursor: pointer;
 }
 
-.nazov:hover, .nazov:active {
+.nazov:hover, .nazov:active, .nazov:focus {
   -webkit-box-shadow: 0.0625em 0.0625em 0.5em #c6999b;
           box-shadow: 0.0625em 0.0625em 0.5em #c6999b;
   -webkit-transition: -webkit-box-shadow 0.4s ease;
   transition: -webkit-box-shadow 0.4s ease;
   transition: box-shadow 0.4s ease;
   transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
-  -webkit-transform: translateY(0.03125em);
-          transform: translateY(0.03125em);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .flex-container {
@@ -121,10 +122,6 @@ a {
   border-radius: 0.15625em;
   width: 90%;
   height: 100%;
-  -webkit-transition: -webkit-box-shadow 0.5s ease-in-out;
-  transition: -webkit-box-shadow 0.5s ease-in-out;
-  transition: box-shadow 0.5s ease-in-out;
-  transition: box-shadow 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
   font-family: 'Lobster', cursive;
 }
 
@@ -145,6 +142,10 @@ a {
   -webkit-box-shadow: 0.0625em 0.0625em 1.375em #b55a58;
           box-shadow: 0.0625em 0.0625em 1.375em #b55a58;
   cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .galery h2,

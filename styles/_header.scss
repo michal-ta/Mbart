@@ -29,14 +29,16 @@
     padding: em(4);
     border-radius: em(4,32);
     border: em(0.25) solid darken($color_lightaccent,22%);
+    cursor: pointer;
     
     
 
 
-    &:hover,&:active{
+    &:hover,&:active,&:focus{
         box-shadow: em(1) em(1) em(8) $color_lightaccent;
         transition: box-shadow 0.4s ease;
-        transform: translateY(em(1,32));
+        transform: scale(1.02);
+        
     }
     
     

@@ -77,17 +77,18 @@ a {
   padding: 0.25em;
   border-radius: 0.125em;
   border: 0.01562em solid #995659;
+  cursor: pointer;
 }
 
-.nazov:hover, .nazov:active {
+.nazov:hover, .nazov:active, .nazov:focus {
   -webkit-box-shadow: 0.0625em 0.0625em 0.5em #c6999b;
           box-shadow: 0.0625em 0.0625em 0.5em #c6999b;
   -webkit-transition: -webkit-box-shadow 0.4s ease;
   transition: -webkit-box-shadow 0.4s ease;
   transition: box-shadow 0.4s ease;
   transition: box-shadow 0.4s ease, -webkit-box-shadow 0.4s ease;
-  -webkit-transform: translateY(0.03125em);
-          transform: translateY(0.03125em);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .autorcon {
@@ -122,5 +123,97 @@ a {
 
 .autorcon .fab:hover, .autorcon .fab:active, .autorcon .fas:hover, .autorcon .fas:active {
   color: #b55a58;
+}
+
+.grid {
+  -ms-grid-columns: 0.7fr 1fr;
+      grid-template-columns: 0.7fr 1fr;
+  height: 100vh;
+  width: 100vw;
+  line-height: 1.5;
+  letter-spacing: 0.125em;
+}
+
+.container_pictures {
+  margin-left: 2.625em;
+}
+
+.wraper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.1fr 0.5fr 0.1fr;
+      grid-template-columns: 0.1fr 0.5fr 0.1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  justify-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1.5625em;
+  height: 100%;
+  width: 80%;
+}
+
+.picture {
+  position: relative;
+  top: 0.25em;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.changing_picture {
+  display: inline;
+  position: relative;
+  height: 10.0625em;
+  width: 10.4375em;
+  bottom: 22%;
+  right: 175%;
+}
+
+.changing_picture .adding {
+  width: 100%;
+  height: 100%;
+}
+
+#bgr {
+  background-color: #f5c56d;
+  height: 38.1875em;
+}
+
+.container {
+  margin: 0.625em;
+  padding: 0.9375em;
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+  justify-items: flex-start;
+}
+
+.color_choosing {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.color_picker_position {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 1.5625em;
+}
+
+.color_picker_position p {
+  padding-bottom: 1.375em;
 }
 /*# sourceMappingURL=changing.css.map */
