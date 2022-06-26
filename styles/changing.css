@@ -216,4 +216,17 @@ a {
 .color_picker_position p {
   padding-bottom: 1.375em;
 }
+
+.color_link {
+  font-weight: 800;
+  color: #4c251c;
+  border-radius: 2.8125em;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.color_link:hover {
+  padding: 0.4375em;
+  background-color: #c6999b;
+}
 /*# sourceMappingURL=changing.css.map */

@@ -77,3 +77,15 @@
         padding-bottom: em(22);
     }
 }
+
+.color_link {
+    font-weight: 800;
+    color: $color_darkshades;
+    border-radius: em(45);
+    transition: all 0.25s ease;
+
+    &:hover {
+        padding: em(7);
+        background-color: $color_lightaccent;
+    }
+}
